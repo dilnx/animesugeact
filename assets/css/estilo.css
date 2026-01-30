@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #eaeaea;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+  background: #151515;
+  border-bottom: 1px solid #222;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 40px;
+}
+
+/* Nav */
+.nav-links a {
+  color: #ccc;
+  margin: 0 6px;
+  font-size: 13px;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* Banner */
+.banner-container {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.lang-switch{
+
+display: flex;
+border: 1px solid #e50914;
+border-radius:20 px;
+overflow: hidden;
+height:30px;
+
+}
+
+.lang-switch button{
+background: transparent;
+border: none;
+color: white;
+padding: 5px 15px;
+cursor: default;
+font-weight: bold;
+font-size: 13px;
+transition: background 0.3s, color 0.3s;
+}
+
+.lang-switch button.active{
+
+background: #e50914;
+color: #181717
+
+}
+
+.banner {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* Search */
+.search-bar {
+  max-width: 1200px;
+  margin: 15px auto;
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+}
+
+.filter-btn {
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+/* Anime grid */
+.anime-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.anime-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.anime-card p {
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+/* Contenedor general: tres columnas */
+.anime-sections {
+   margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  color: white;
+}
+
+/* Cada sección */
+.section {
+  flex: 1;
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+  max-height: none;
+  overflow: visible;
+}
+
+/* Título de sección */
+.section h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 6px;
+}
+
+/* Listas generales */
+.anime-list,
+.ranking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* FILA COMÚN para los items de Recently Added y Just Completed */
+.anime-list .anime-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #2a2a2a;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.anime-list .anime-row:hover {
+  background-color: #333;
+}
+.anime-list .anime-row img {
+  width: 55px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.anime-list .anime-row .anime-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+.anime-list .anime-row .anime-meta {
+  font-size: 12px;
+  color: #aaa;
+  margin: 2px 0 0;
+}
+
+/* MOST VIEWED */
+.section.most-viewed .featured-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #2a2a2a;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.section.most-viewed .featured-item:hover {
+  background-color: #333;
+}
+.section.most-viewed .featured-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.section.most-viewed .featured-item .featured-info {
+  text-align: center;
+}
+.section.most-viewed .featured-item .anime-title {
+  font-size: 16px;
+  margin: 0 0 6px;
+}
+.section.most-viewed .featured-item .anime-meta {
+  font-size: 12px;
+  color: #aaa;
+  margin: 0;
+}
+
+
+.section.most-viewed .ranking-list .anime-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #2a2a2a;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 8px;
+}
+.section.most-viewed .ranking-list .anime-row:hover {
+  background-color: #333;
+}
+.section.most-viewed .ranking-list .anime-row img {
+  width: 40px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.section.most-viewed .ranking-list .anime-row .anime-title {
+  font-size: 14px;
+  margin: 0;
+}
+.section.most-viewed .ranking-list .anime-row .anime-meta {
+  font-size: 12px;
+  color: #ccc;
+  margin: 2px 0 0;
+}
+
+
+
+/* Footer */
+.custom-footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: #151515;
+  text-align: center;
+  font-size: 13px;
+}
