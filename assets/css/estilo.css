@@ -53,6 +53,12 @@ header.scrolled {
   margin: 20px auto;
 }
 
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
 .lang-switch{
 
 display: flex;
@@ -67,10 +73,13 @@ height:30px;
 background: transparent;
 border: none;
 color: white;
-padding: 5px 15px;
+padding: 0 15px;
 cursor: default;
 font-weight: bold;
 font-size: 13px;
+display: flex;
+align-items: center;
+justify-content: center;
 transition: background 0.3s, color 0.3s;
 }
 
@@ -79,6 +88,38 @@ transition: background 0.3s, color 0.3s;
 background: #e50914;
 color: #181717
 
+}
+
+.user-seccion {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #333;
+  padding: 3px;
+  background: #1e1e1e;
+}
+
+.signup {
+  color: #fff;
+  background: #e50914;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.3s;
+}
+
+.signup:hover {
+  background: #c40812;
 }
 
 .banner {
@@ -122,6 +163,105 @@ color: #181717
 .filter-btn {
   padding: 8px 14px;
   cursor: pointer;
+}
+
+/* Share section */
+.redesso {
+  max-width: 1200px;
+  margin: 10px auto;
+  font-size: 13px;
+  color: #aaa;
+  text-align: center;
+}
+
+.redes {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.redes .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #fff;
+  background: #2a2a2a;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.redes .btn:hover {
+  transform: translateY(-2px);
+}
+
+.redes .facebook:hover { background: #1877f2; }
+.redes .x:hover { background: #000; }
+.redes .whatsapp:hover { background: #25d366; }
+.redes .reddit:hover { background: #ff4500; }
+.redes .telegram:hover { background: #229ed9; }
+
+/* Filter bar */
+.anime-filter-bar {
+  max-width: 1200px;
+  margin: 20px auto 15px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.anime-filter-bar h2 {
+  font-size: 20px;
+  margin-right: auto;
+}
+
+.filter-options {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-options a {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #1e1e1e;
+  color: #ccc;
+  font-size: 13px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.filter-options a:hover {
+  background: #e50914;
+  color: #fff;
+}
+
+.filter-arrows {
+  display: flex;
+  gap: 6px;
+}
+
+.filter-arrows button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  background: #1e1e1e;
+  color: #ccc;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.filter-arrows button:hover {
+  background: #e50914;
+  color: #fff;
+  border-color: #e50914;
 }
 
 /* Anime grid */
