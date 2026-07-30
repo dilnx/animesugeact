@@ -1,10 +1,14 @@
 # AnimeSuge
 
-Proyecto web estático desarrollado en HTML y CSS.
+Proyecto web estatico desarrollado con HTML, CSS y JavaScript.
 
 ## Contenido
-- index.html: Página principal del sitio
-- hola.html: Página de prueba para GitHub Pages
+
+- `index.html`: pagina principal del sitio.
+- `assets/css/estilo.css`: estilos responsivos e interfaz visual.
+- `nose.js`: animaciones, busqueda, filtros y enlaces para compartir.
+- `hola.html`: pagina de prueba para GitHub Pages.
 
 ## Autor
+
 Dilan Barajas

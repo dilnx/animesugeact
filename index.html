@@ -3,39 +3,39 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title> animesuge</title>
+       <title>AnimeSuge</title>
        <link rel="stylesheet" href="assets/css/estilo.css">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     </head>
     
-    <body>
+    <body id="top">
 
       <header>
           <div class="container">
             <img src="assets/images/logo.png" alt="Logo" class="logo">
             
-            <nav class="nav-links">
-              <a href="#">GENRES</a>
-              <a href="#">TYPES</a>
-              <a href="#">UPDATED</a>
-              <a href="#">ADDED</a>
-              <a href="#">POPULAR</a>
-              <a href="#">UPCOMING</a>
-              <a href="#">ONGOING</a>
-              <a href="#">COMPLETED</a>
-              <a href="#">SCHEDULE</a>
-              <a href="#">RANDOM</a>
+            <nav class="nav-links" aria-label="Main navigation">
+              <a href="#recently-updated">GENRES</a>
+              <a href="#recently-updated">TYPES</a>
+              <a href="#recently-updated">UPDATED</a>
+              <a href="#recently-added">ADDED</a>
+              <a href="#most-viewed">POPULAR</a>
+              <a href="#recently-updated">UPCOMING</a>
+              <a href="#recently-updated">ONGOING</a>
+              <a href="#just-completed">COMPLETED</a>
+              <a href="#recently-updated">SCHEDULE</a>
+              <a href="#recently-updated">RANDOM</a>
             </nav>
 
             <div class="top-bar">
               <div class="lang-switch">
-                <button class="active">EN</button>
-                <button>ES</button>
+                <button type="button" class="active" aria-pressed="true">EN</button>
+                <button type="button" aria-pressed="false">ES</button>
               </div>
               <div class="user-seccion">
                 <img src="assets/images/usuario.png" alt="User" class="user-icon">
-                <a href="#" class="signup">Sign Up</a>
+                <a href="#recently-updated" class="signup">Sign Up</a>
               </div>
             </div>
           
@@ -44,36 +44,35 @@
         </header>
         
         <div class="banner-container">
-        <img src="assets/images/anime-1.png" class="banner">
+        <img src="assets/images/anime-1.png" class="banner" alt="Featured anime banner">
       </div>
 
       <div class="search-bar">
-        <input type="text"
-        placeholder= "search anime...">
-        <button class="filter-btn"> Filter</button>
+        <input type="search" id="anime-search" placeholder="Search anime..." aria-label="Search anime">
+        <button type="button" class="filter-btn">Filter</button>
       
       </div>
-<p class="redesso"> if you enjoy the website, please consider sharing it whit your friends. thank you </p>
+<p class="redesso">If you enjoy the website, please consider sharing it with your friends. Thank you.</p>
 <div class="redes">
-  <a href="#" class="btn facebook"><i class="fab fa-facebook"></i> Share</a>
-  <a href="#" class="btn x"><i class="fab fa-x"></i> Tweet</a>
-  <a href="#" class="btn whatsapp"><i class="fab fa-whatsapp"></i> Share</a>
-  <a href="#" class="btn reddit"><i class="fab fa-reddit"></i> Share</a>
-  <a href="#" class="btn telegram"><i class="fab fa-telegram"></i> Share</a>
+  <a href="#" class="btn facebook" aria-label="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i> Share</a>
+  <a href="#" class="btn x" aria-label="Share on X"><i class="fab fa-x-twitter" aria-hidden="true"></i> Tweet</a>
+  <a href="#" class="btn whatsapp" aria-label="Share on WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i> Share</a>
+  <a href="#" class="btn reddit" aria-label="Share on Reddit"><i class="fab fa-reddit" aria-hidden="true"></i> Share</a>
+  <a href="#" class="btn telegram" aria-label="Share on Telegram"><i class="fab fa-telegram" aria-hidden="true"></i> Share</a>
 </div>
       
-<div class="anime-filter-bar">
-  <h2>Recently Update</h2>
+<div class="anime-filter-bar" id="recently-updated">
+  <h2>Recently Updated</h2>
   <ul class="filter-options">
-    <li><a href="#">All</a></li>
-    <li><a href="#">Sub</a></li>
-    <li><a href="#">Dub</a></li>
-    <li><a href="#">Trending</a></li>
-    <li><a href="#">Random</a></li>
+    <li><button type="button" class="active" data-filter="all" aria-pressed="true">All</button></li>
+    <li><button type="button" data-filter="sub" aria-pressed="false">Sub</button></li>
+    <li><button type="button" data-filter="dub" aria-pressed="false">Dub</button></li>
+    <li><button type="button" data-filter="trending" aria-pressed="false">Trending</button></li>
+    <li><button type="button" data-filter="random" aria-pressed="false">Random</button></li>
   </ul>
   <div class="filter-arrows">
-    <button>&lt;</button>
-    <button>&gt;</button>
+    <button type="button" aria-label="Previous anime">&lt;</button>
+    <button type="button" aria-label="Next anime">&gt;</button>
   </div>
 </div>
 
@@ -96,7 +95,7 @@
 
   <div class="anime-card">
     <img src="assets/images/anime-4.png" alt="The catcher in the ballpark!">
-    <p>the catcher in the ballpark!</p>
+    <p>The Catcher in the Ballpark!</p>
   </div>
 
   <div class="anime-card">
@@ -183,12 +182,12 @@
   <img src="assets/images/anime-4.png" alt="Nights with a Cat Season 3">
   <p>Nights with a Cat Season 3</p>
  </div>
-  
+  <p class="empty-state" hidden>No anime found. Try another search or filter.</p>
 </div>
 
 <div class="anime-sections">
   <!-- Recently Added -->
-  <div class="section recently-added">
+  <div class="section recently-added" id="recently-added">
     <h3>Recently Added</h3>
     <div class="anime-list">
       <div class="anime-row">
@@ -230,7 +229,7 @@
   </div>
 
   <!-- Most Viewed -->
-  <div class="section most-viewed">
+  <div class="section most-viewed" id="most-viewed">
     <h3>Most Viewed</h3>
     <div class="anime-featured">
       <img src="assets/images/top-1.png" alt="One Piece">
@@ -278,7 +277,7 @@
   </div>
 
   <!-- Just Completed -->
-  <div class="section just-completed">
+  <div class="section just-completed" id="just-completed">
   <h3>Just Completed</h3>
   <div class="anime-list">
 
@@ -330,11 +329,11 @@
   <div class="footer-top">
     <img src="assets/images/logo.png" alt= "AnimeSuge Logo" class="footer-logo">
     <div class="footer-links">
-      <a href="#">Home</a>
-      <a href="#">DMCA</a>
-      <a href="#">Terms of Use</a>
-      <a href="#">Read manga online</a>
-      <a href="#">Contact</a>
+      <a href="#top">Home</a>
+      <a href="#recently-added">DMCA</a>
+      <a href="#recently-updated">Terms of Use</a>
+      <a href="#most-viewed">Read manga online</a>
+      <a href="#just-completed">Contact</a>
     </div>
   </div>
   <p class="copyright">
