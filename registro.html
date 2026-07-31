@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Sign Up - AnimeSuge</title>
+       <link rel="stylesheet" href="assets/css/estilo.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    </head>
+
+    <body id="top">
+
+      <header>
+          <div class="container">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Logo" class="logo"></a>
+          </div>
+      </header>
+
+      <main class="auth-page">
+        <form class="auth-card" id="register-form" novalidate>
+          <h1>Create your account</h1>
+          <p class="auth-subtitle">No database here — your account is saved in this browser's storage.</p>
+
+          <label class="form-group">
+            <span>Name</span>
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+
+          <label class="form-group">
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+
+          <label class="form-group">
+            <span>Password</span>
+            <input type="password" name="password" autocomplete="new-password" required minlength="6">
+          </label>
+
+          <label class="form-group">
+            <span>Confirm Password</span>
+            <input type="password" name="confirmPassword" autocomplete="new-password" required minlength="6">
+          </label>
+
+          <p class="form-error" id="register-error" role="alert"></p>
+
+          <button type="submit" class="filter-btn auth-submit">Sign Up</button>
+
+          <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+        </form>
+      </main>
+
+      <div class="custom-footer">
+        <p class="copyright">
+          Copyright © animesugetv.to. All Rights Reserved<br>
+          <span class="disclaimer">
+            Disclaimer: This site does not store any files on its server. All contents are provided by non-affiliated third parties.
+          </span>
+        </p>
+      </div>
+
+      <script src="assets/js/auth.js" defer></script>
+
+    </body>
+</html>

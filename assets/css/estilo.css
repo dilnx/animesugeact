@@ -148,6 +148,99 @@ color: #181717
   background: #c40812;
 }
 
+.signup.logout-btn {
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #333;
+}
+
+.signup.logout-btn:hover {
+  background: #1e1e1e;
+}
+
+.user-icon-link {
+  display: inline-flex;
+}
+
+.welcome-user {
+  font-size: 13px;
+  color: #ccc;
+  white-space: nowrap;
+}
+
+/* Auth pages (login/registro) */
+.auth-page {
+  min-height: calc(100vh - 260px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 380px;
+  background: #171717;
+  border: 1px solid #262626;
+  border-radius: 10px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.auth-card h1 {
+  font-size: 22px;
+}
+
+.auth-subtitle {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 4px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.form-error {
+  min-height: 18px;
+  font-size: 13px;
+  color: #ff6b6b;
+}
+
+.auth-submit {
+  width: 100%;
+}
+
+.auth-switch {
+  font-size: 13px;
+  color: #aaa;
+  text-align: center;
+}
+
+.auth-switch a {
+  color: #e50914;
+  font-weight: bold;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
 .banner {
   width: 100%;
   border-radius: 6px;
