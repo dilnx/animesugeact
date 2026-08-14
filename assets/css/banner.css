@@ -1,0 +1,18 @@
+/* Banner */
+.banner-container {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.banner {
+  width: 100%;
+  border-radius: 6px;
+  transform: scale(1.05);
+  opacity: 0;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.banner.banner-loaded {
+  transform: scale(1);
+  opacity: 1;
+}

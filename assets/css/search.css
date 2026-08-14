@@ -1,0 +1,17 @@
+/* Search */
+.search-bar {
+  max-width: 1200px;
+  margin: 15px auto;
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+}
+
+.filter-btn {
+  padding: 8px 14px;
+  cursor: pointer;
+}

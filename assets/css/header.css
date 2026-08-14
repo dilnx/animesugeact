@@ -1,0 +1,64 @@
+/* Header */
+header {
+  background: #151515;
+  border-bottom: 1px solid #222;
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+header.scrolled {
+  background: #101010;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 40px;
+}
+
+/* Nav */
+.nav-links a {
+  color: #ccc;
+  margin: 0 6px;
+  font-size: 13px;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+.lang-switch{
+
+display: flex;
+border: 1px solid #e50914;
+border-radius:20 px;
+overflow: hidden;
+height:30px;
+
+}
+
+.lang-switch button{
+background: transparent;
+border: none;
+color: white;
+padding: 5px 15px;
+cursor: default;
+font-weight: bold;
+font-size: 13px;
+transition: background 0.3s, color 0.3s;
+}
+
+.lang-switch button.active{
+
+background: #e50914;
+color: #181717
+
+}
