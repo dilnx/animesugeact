@@ -21,3 +21,7 @@
 .anime-card.reveal.is-visible:hover {
   transform: translateY(-6px);
 }
+
+.anime-card.hidden {
+  display: none;
+}
